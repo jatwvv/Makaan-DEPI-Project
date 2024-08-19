@@ -483,7 +483,7 @@ body {
 
 .image_on_right_side {
   width: 50%;
-  background-image: url("header.jpg");
+  background-image: url("../images/header.jpg");
   background-size: cover;
   background-position: center;
   min-height: 400px;
@@ -710,7 +710,7 @@ h3 {
 
 .image_on_right_side {
   flex: 1;
-  background-image: url("header.jpg");
+  background-image: url("../images/header.jpg");
   background-size: cover;
   background-position: center;
   min-height: 500px;
@@ -769,7 +769,7 @@ h3 {
 
 .image_on_right_side {
   flex: 1;
-  background-image: url("../Assets/Images/header.jpg");
+  background-image: url("../images/header.jpg");
   background-size: cover;
   background-position: center;
   min-height: 500px;
