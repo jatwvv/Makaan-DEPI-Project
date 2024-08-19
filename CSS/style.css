@@ -69,15 +69,12 @@
   --secondary: #ff6922;
   --light: #effdf5;
   --dark: #0e2e50;
-<<<<<<< Updated upstream
   --dark-hover:#0c2744;
-=======
   --primary-hover: #26c49f;
   --secondary: #ff6922;
   --light: #effdf5;
   --dark: #0e2e50;
   --dark-hover: #0c2744;
->>>>>>> Stashed changes
 }
 ul {
   list-style: none;
