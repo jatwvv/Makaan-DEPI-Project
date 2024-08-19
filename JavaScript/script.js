@@ -36,22 +36,22 @@ scrollTop();
 const slides = document.querySelector(".slides");
 const prevBtn = document.getElementById("prevBtn");
 const nextBtn = document.getElementById("nextBtn");
-let currentIndex = 0;
+let currentIndex1 = 0;
 
 prevBtn.addEventListener("click", () => {
-  currentIndex =
-    currentIndex > 0 ? currentIndex - 1 : slides.children.length - 1;
+  currentIndex1 =
+    currentIndex1 > 0 ? currentIndex1 - 1 : slides.children.length - 1;
   updateSlidePosition();
 });
 
 nextBtn.addEventListener("click", () => {
-  currentIndex =
-    currentIndex < slides.children.length - 1 ? currentIndex + 1 : 0;
+  currentIndex1 =
+    currentIndex1 < slides.children.length - 1 ? currentIndex1 + 1 : 0;
   updateSlidePosition();
 });
 
 function updateSlidePosition() {
-  slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+  slides.style.transform = `translateX(-${currentIndex1 * 100}%)`;
 }
 
 // Initialize the first slide position
@@ -67,3 +67,4 @@ document.querySelectorAll(".category a").forEach((link) => {
     this.classList.add("active"); // Add 'active' class to the clicked link
   });
 });
+

@@ -1,3 +1,37 @@
+// navigation movment
+window.addEventListener("scroll", function () {
+  var header = document.querySelector("header");
+  header.classList.toggle("sticky", window.scrollY > 0);
+});
+
+//scroll up button
+const scrollTop = function () {
+  //create a button in html page
+  const scrollBtn = document.createElement("button");
+  scrollBtn.innerHTML = "&uarr;";
+  scrollBtn.setAttribute("id", "scroll-btn");
+  document.body.appendChild(scrollBtn);
+  //scroll function
+  const scrollBtnDisplay = function () {
+    window.scrollY > window.innerHeight
+      ? scrollBtn.classList.add("show")
+      : scrollBtn.classList.remove("show");
+  };
+  window.addEventListener("scroll", scrollBtnDisplay);
+  //add the functionality
+  const scrollWindow = function () {
+    if (window.scrollY != 0) {
+      setTimeout(function () {
+        window.scrollTo(0, window.scrollY - 50);
+        scrollWindow();
+      }, 10);
+    }
+  };
+  scrollBtn.addEventListener("click", scrollWindow);
+};
+
+scrollTop();
+
 let currentIndex = 0;
 
 function updateSliderPosition() {
