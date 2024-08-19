@@ -1,0 +1,135 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f7f7f7;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.testimonials {
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.testimonials h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.testimonials p {
+    font-size: 20px;
+    color: #666;
+}
+
+.testimonial-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.testimonial-wrapper {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 200%;
+}
+
+.testimonial-card {
+    background-color: #fff;
+    border: 1px dashed #91cfbb;
+    outline: 15px solid #e9ffff;
+    padding: 20px;
+    margin: 0 25px;
+    width: calc(60% - 260px); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: all 0.5s ease;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-shrink: 0;
+    height: auto;
+}
+
+.testimonial-card p {
+    line-height: 1.2;
+    font-size: 17px;
+}
+
+.client-info {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.client-info img {
+    border-radius: 20%;
+    margin-right: 15px;
+    width: 50px;
+    height: 50px;
+}
+
+.client-info .client-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.client-info .client-name {
+    font-size: 16px;
+    margin-bottom: 2px;
+}
+
+
+.client-info .client-profession {
+    font-size: 17px;
+    color: #888;
+    margin: 4px;
+}
+
+.prev, .next {
+    background-color: #00c9a7;
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    margin: 0 0px;
+}
+
+.prev {
+    left: 20px;
+    position: absolute;
+}
+
+.next {
+    right: 20px;
+    position: absolute;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgb(6, 6, 74);
+}
+
+.testimonial-slider {
+    position: relative;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+}
+
+
