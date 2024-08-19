@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome link -->
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <!-- style file link -->
+    <link rel="stylesheet" href="CSS/style.css" />
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Property List</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <a href="#" class="logo">
+            <div class="icon">
+              <img src="Assets/Images/icon-deal.png" alt="logo" />
+            </div>
+            <h1>Makaan</h1>
+          </a>
+          <div class="collapse">
+            <div class="navbar-nav">
+              <a href="index.html" class="nav-item nav-link">Home</a>
+              <a href="about.html" class="nav-item nav-link">About</a>
+              <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle active"
+                  >Property <i class="fa-solid fa-chevron-down"></i
+                ></a>
+                <div class="dropdown-menu">
+                  <a href="problist.html" class="dropdown-item active"
+                    >Property List</a
+                  >
+                  <a href="proptype.html" class="dropdown-item"
+                    >Property Type</a
+                  >
+                  <a href="propagent.html" class="dropdown-item"
+                    >Property Agent</a
+                  >
+                </div>
+              </div>
+              <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle"
+                  >Pages<i class="fa-solid fa-chevron-down"></i
+                ></a>
+                <div class="dropdown-menu rounded-0 m-0">
+                  <a href="testimonial.html" class="dropdown-item"
+                    >Testimonial</a
+                  >
+                  <a href="404.html" class="dropdown-item">404 Error</a>
+                </div>
+              </div>
+              <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+            <a href="#" class="btn">Add Property</a>
+          </div>
+        </nav>
+      </header>
+      <div class="containerimg">
+        <div class="problist_header">
+          <h1 style="padding-left: 20px">Property List</h1>
+          <div style="padding-left: 20px" class="breadcrumb-container">
+            <a href="#">HOME / </a>
+            <a href="#">PAGES / </a>
+            <p class="#">Property List</p>
+          </div>
+        </div>
+        <div class="image_on_right_side"></div>
+      </div>
+
+      <!-- MARAM'S SEARCHING PART -->
+      <div class="search">
+        <input type="text" placeholder="Search Keyword" class="search-input" />
+  
+        <select class="property-type">
+          <option value="" disabled selected>Property Type</option>
+          <option value="Property Type1">Property Type1</option>
+          <option value="Property Type2">Property Type2</option>
+          <option value="Property Type3">Property Type3</option>
+        </select>
+  
+        <select class="Location">
+          <option value="" disabled selected>Location</option>
+          <option value="Location1">Location1</option>
+          <option value="Location2">Location2</option>
+          <option value="Location3">Location3</option>
+        </select>
+  
+        <button class="search-button">Search</button>
+    </div>
+      <!-- END OF MARAM'S PART -->
+
+      <!-- START OF INTRODUCTION TO PAGE -->
+
+      <div class="propertylisting-container" style="margin-top: 50px">
+        <div class="problist_header2">
+          <h1 style="font-size: 2.6rem; padding-left: 15px">
+            Property Listing
+          </h1>
+          <p class="p-propertylist">
+            Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore
+            lorem kasd vero ipsum sit eirmod sit diam justo sed rebum.
+          </p>
+        </div>
+        <div class="category">
+          <a class="featured" href="#">Featured</a>
+          <a class="sell" href="#">For Sell</a>
+          <a class="rent" href="#">For Rent</a>
+        </div>
+      </div>
+
+      <!-- START OF CARDS -->
+      <div class="property-listings-container">
+        <div class="property-card">
+          <div class="statues">for rent</div>
+          <!-- New div for label -->
+          <div class="parity">Appartment</div>
+          <img src="Assets/images/property-1.jpg" alt="Property Image" />
+          <div class="price">$15000</div>
+          <div>
+            <a href="problist.html" class="txt">Golden Urban House For Sell</a>
+          </div>
+          <p class="location">
+            <i class="fas fa-map-marker-alt"></i> 123 Street, New York, USA
+          </p>
+          <div class="details">
+            <p>
+              <i class="fa fa-ruler-combined text-primary me-2"></i>1000 Sqft
+            </p>
+            <p class="right">
+              <i class="fa fa-bed text-primary me-2"></i>3 Bed
+            </p>
+            <p><i class="fa fa-bath text-primary me-2"></i>2 Bath</p>
+          </div>
+        </div>
+
+        <div class="property-card">
+          <div class="statues">for sell</div>
+          <div class="parity">Villa</div>
+          <img src="Assets/images/property-2.jpg" alt="Property Image" />
+          <div class="price">$13500</div>
+          <div>
+            <a href="problist.html" class="txt">Modern Apartment</a>
+          </div>
+          <p class="location">
+            <i class="fas fa-map-marker-alt"></i> 456 Avenue, Los Angeles, USA
+          </p>
+          <div class="details">
+            <p>
+              <i class="fa fa-ruler-combined text-primary me-2"></i>1500 Sqft
+            </p>
+            <p class="right">
+              <i class="fa fa-bed text-primary me-2"></i>4 Bed
+            </p>
+            <p><i class="fa fa-bath text-primary me-2"></i>3 Bath</p>
+          </div>
+        </div>
+
+        <div class="property-card">
+          <div class="statues">for rent</div>
+          <!-- New div for label -->
+          <div class="parity">Office</div>
+          <img src="Assets/images/property-3.jpg" alt="Property Image" />
+          <div class="price">$21000</div>
+          <div>
+            <a href="problist.html" class="txt">Luxury Villa</a>
+          </div>
+          <p class="location">
+            <i class="fas fa-map-marker-alt"></i> 789 Boulevard, Miami, USA
+          </p>
+          <div class="details">
+            <p>
+              <i class="fa fa-ruler-combined text-primary me-2"></i>2000 Sqft
+            </p>
+            <p class="right">
+              <i class="fa fa-bed text-primary me-2"></i>5 Bed
+            </p>
+            <p><i class="fa fa-bath text-primary me-2"></i>4 Bath</p>
+          </div>
+        </div>
+
+        <div class="property-card">
+          <div class="statues">for sell</div>
+          <div class="parity">Building</div>
+          <img src="Assets/images/property-4.jpg" alt="Property Image" />
+          <div class="price">$9000</div>
+          <div>
+            <a href="problist.html" class="txt">Cozy Cottage</a>
+          </div>
+          <p class="location">
+            <i class="fas fa-map-marker-alt"></i> 321 Road, Orlando, USA
+          </p>
+          <div class="details">
+            <p>
+              <i class="fa fa-ruler-combined text-primary me-2"></i>800 Sqft
+            </p>
+            <p class="right">
+              <i class="fa fa-bed text-primary me-2"></i>2 Bed
+            </p>
+            <p><i class="fa fa-bath text-primary me-2"></i>1 Bath</p>
+          </div>
+        </div>
+
+        <div class="property-card">
+          <div class="statues">for rent</div>
+          <div class="parity">Home</div>
+          <img src="Assets/images/property-5.jpg" alt="Property Image" />
+          <div class="price">$17500</div>
+          <div>
+            <a href="problist.html" class="txt">Spacious Farmhouse</a>
+          </div>
+          <p class="location">
+            <i class="fas fa-map-marker-alt"></i> 654 Country Lane, Texas, USA
+          </p>
+          <div class="details">
+            <p>
+              <i class="fa fa-ruler-combined text-primary me-2"></i>2500 Sqft
+            </p>
+            <p class="right">
+              <i class="fa fa-bed text-primary me-2"></i>4 Bed
+            </p>
+            <p><i class="fa fa-bath text-primary me-2"></i>3 Bath</p>
+          </div>
+        </div>
+
+        <div class="property-card">
+          <div class="statues">for sell</div>
+          <div class="parity">Shop</div>
+          <img src="Assets/images/property-6.jpg" alt="Property Image" />
+          <div class="price">$12500</div>
+          <div>
+            <a href="problist.html" class="txt">Urban Apartment</a>
+          </div>
+          <p class="location">
+            <i class="fas fa-map-marker-alt"></i> 987 Main Street, Chicago, USA
+          </p>
+          <div class="details">
+            <p>
+              <i class="fa fa-ruler-combined text-primary me-2"></i>1200 Sqft
+            </p>
+            <p class="right">
+              <i class="fa fa-bed text-primary me-2"></i>3 Bed
+            </p>
+            <p><i class="fa fa-bath text-primary me-2"></i>2 Bath</p>
+          </div>
+        </div>
+        <a href="#" class="btn btn-list">Browse More Property</a>
+      </div>
+      <!-- End of work "property list" -->
+    </div>
+    <!-- End of main content -->
+    <script src="JavaScript/script.js"></script>
+  </body>
+</html>
