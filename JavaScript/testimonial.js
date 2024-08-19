@@ -67,3 +67,15 @@ document.addEventListener("DOMContentLoaded", function () {
   // Automatically slide every 5 seconds
   setInterval(nextSlide, 5000);
 });
+
+window.addEventListener('load', () => {
+  const loader = document.getElementById('loader');
+  const content = document.getElementById('container');
+  setTimeout(() => {
+        loader.style.opacity = '0'; // Start fading out
+        setTimeout(() => {
+            loader.style.display = 'none'; // Hide after transition
+            content.style.display = 'block';
+        }, 500); // Match this delay with the CSS transition duration
+    }, 500);
+  });

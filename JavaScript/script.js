@@ -67,4 +67,3 @@ document.querySelectorAll(".category a").forEach((link) => {
     this.classList.add("active"); // Add 'active' class to the clicked link
   });
 });
-

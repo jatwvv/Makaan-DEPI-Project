@@ -16,8 +16,27 @@
     />
     <title>Makaan | Template</title>
   </head>
-  <body>
-    <div class="container">
+  <body><script>
+   window.addEventListener('load', () => {
+  const loader = document.getElementById('loader');
+  const content = document.getElementById('container');
+  setTimeout(() => {
+        loader.style.opacity = '0'; // Start fading out
+        setTimeout(() => {
+            loader.style.display = 'none'; // Hide after transition
+            content.style.display = 'block';
+        }, 500); // Match this delay with the CSS transition duration
+    }, 500);
+  });
+  </script>
+    <div class="container" id="container">
+      <div id="loader" class="loader-container">
+        <div class="spinner">
+          <div class="bounce1"></div>
+          <div class="bounce2"></div>
+          <div class="bounce3"></div>
+        </div>
+      </div>
       <!-- Start Navigation Bar -->
       <header>
         <nav>
@@ -67,6 +86,195 @@
         </nav>
       </header>
       <!-- End Navigation Bar -->
+      <!-- Header -->
+      <div class="containerimg">
+        <div class="proptyp_header">
+          <h1 style="padding-left: 20px">Contact Us</h1>
+          <div style="padding-left: 20px" class="breadcrumb-container">
+            <a href="#">HOME / </a>
+            <a href="#">PAGES / </a>
+            <p class="#">CONTACT US</p>
+          </div>
+        </div>
+        <div class="image_on_right_side"></div>
+      </div>
+      <!-- Search -->
+      <div class="search">
+        <input type="text" placeholder="Search Keyword" class="search-input" />
+  
+        <select class="property-type">
+          <option value="" disabled selected>Property Type</option>
+          <option value="Property Type1">Property Type1</option>
+          <option value="Property Type2">Property Type2</option>
+          <option value="Property Type3">Property Type3</option>
+        </select>
+  
+        <select class="Location">
+          <option value="" disabled selected>Location</option>
+          <option value="Location1">Location1</option>
+          <option value="Location2">Location2</option>
+          <option value="Location3">Location3</option>
+        </select>
+  
+        <button class="search-button">Search</button>
+    </div>
+      <!-- Contact Us Section -->
+      <section id="contact-us">
+        <div class="contact-header">
+          <h2>Contact Us</h2>
+          <p>
+            Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore
+            lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed rebum
+            vero dolor duo.
+          </p>
+        </div>
+        <div class="contact-us-info">
+          <div class="info-box">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>123 Street, New York, USA</p>
+          </div>
+          <div class="info-box">
+            <i class="fa fa-envelope-open text-primary"></i>
+            <p>info@example.com</p>
+          </div>
+          <div class="info-box">
+            <i class="fa fa-phone-alt text-primary"></i>
+            <p>+012 345 6789</p>
+          </div>
+        </div>
+        <div class="contact-content">
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.705504491097!2d31.255172676688836!3d29.959148374966638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145847f6de098735%3A0xacc9e8fb91cfaaa!2sYAT%20Learning%20Centers%20-%20Maadi!5e0!3m2!1sen!2seg!4v1724076256078!5m2!1sen!2seg"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="form-container">
+            <p class="form-info">
+              The contact form is currently inactive. Get a functional and
+              working contact form with Ajax & PHP in a few minutes. Just copy
+              and paste the files, add a little code and you're done.
+              <a href="#">Download Now.</a>
+            </p>
+            <form id="contact-form">
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your Name"
+                  required
+                />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+              <input
+                type="text"
+                name="subject"
+                placeholder="Subject"
+                required
+              />
+              <textarea
+                name="message"
+                placeholder="Message"
+                rows="5"
+                required
+              ></textarea>
+              <button type="submit">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- Footer -->
+      <!-- Footer Section -->
+      <footer id="footer" class="footer">
+        <div class="footer-content">
+          <!-- Get In Touch -->
+          <div class="footer-column">
+            <h4>Get In Touch</h4>
+            <ul class="contact-info">
+              <li>
+                <i class="fas fa-map-marker-alt"></i> 123 Street, New York, USA
+              </li>
+              <li><i class="fas fa-phone-alt"></i> +012 345 67890</li>
+              <li><i class="fas fa-envelope"></i> info@example.com</li>
+            </ul>
+            <ul class="social-linkss">
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="footer-column">
+            <h4>Quick Links</h4>
+            <ul class="quick-links">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Our Services</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms & Condition</a></li>
+            </ul>
+          </div>
+
+          <!-- Photo Gallery -->
+          <div class="footer-column">
+            <h4>Photo Gallery</h4>
+            <div class="photo-gallery">
+              <img src="Aimages/property-1.jpg" alt="Property 1" />
+              <img src="Aimages/property-2.jpg" alt="Property 2" />
+              <img src="Aimages/property-3.jpg" alt="Property 3" />
+              <img src="Aimages/property-4.jpg" alt="Property 4" />
+              <img src="Aimages/property-5.jpg" alt="Property 5" />
+              <img src="Aimages/property-6.jpg" alt="Property 6" />
+            </div>
+          </div>
+
+          <!-- Newsletter -->
+          <div class="footer-column">
+            <h4>Newsletter</h4>
+            <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+            <form class="newsletter-form">
+              <input type="email" placeholder="Your email" />
+              <button type="submit">SignUp</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+          <p>
+            Â© Your Site Name, All Right Reserved. Designed By
+            <a href="#">HTML Codex</a>
+          </p>
+          <ul class="footer-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Cookies</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+      </footer>
+
+      <!-- Button -->
     </div>
     <script src="JavaScript/script.js"></script>
   </body>

@@ -16,8 +16,27 @@
     />
     <title>Makaan | 404</title>
   </head>
-  <body>
-    <div class="container">
+  <body><script>
+   window.addEventListener('load', () => {
+  const loader = document.getElementById('loader');
+  const content = document.getElementById('container');
+  setTimeout(() => {
+        loader.style.opacity = '0'; // Start fading out
+        setTimeout(() => {
+            loader.style.display = 'none'; // Hide after transition
+            content.style.display = 'block';
+        }, 500); // Match this delay with the CSS transition duration
+    }, 500);
+  });
+  </script>
+    <div class="container" id="container">
+      <div id="loader" class="loader-container">
+        <div class="spinner">
+          <div class="bounce1"></div>
+          <div class="bounce2"></div>
+          <div class="bounce3"></div>
+        </div>
+      </div>
       <!-- Start Navigation Bar -->
       <header>
         <nav>
@@ -81,23 +100,23 @@
       <!-- MARAM'S SEARCHING PART -->
       <div class="search">
         <input type="text" placeholder="Search Keyword" class="search-input" />
-  
+
         <select class="property-type">
           <option value="" disabled selected>Property Type</option>
           <option value="Property Type1">Property Type1</option>
           <option value="Property Type2">Property Type2</option>
           <option value="Property Type3">Property Type3</option>
         </select>
-  
+
         <select class="Location">
           <option value="" disabled selected>Location</option>
           <option value="Location1">Location1</option>
           <option value="Location2">Location2</option>
           <option value="Location3">Location3</option>
         </select>
-  
+
         <button class="search-button">Search</button>
-    </div>
+      </div>
       <!-- END OF MARAM'S PART -->
       <!-- end intro -->
       <!-- start error -->
@@ -118,6 +137,84 @@
         </div>
       </div>
       <!-- end error -->
+      <footer id="footer" class="footer">
+        <div class="footer-content">
+          <!-- Get In Touch -->
+          <div class="footer-column">
+            <h4>Get In Touch</h4>
+            <ul class="contact-info">
+              <li>
+                <i class="fas fa-map-marker-alt"></i> 123 Street, New York, USA
+              </li>
+              <li><i class="fas fa-phone-alt"></i> +012 345 67890</li>
+              <li><i class="fas fa-envelope"></i> info@example.com</li>
+            </ul>
+            <ul class="social-linkss">
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="footer-column">
+            <h4>Quick Links</h4>
+            <ul class="quick-links">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Our Services</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms & Condition</a></li>
+            </ul>
+          </div>
+
+          <!-- Photo Gallery -->
+          <div class="footer-column">
+            <h4>Photo Gallery</h4>
+            <div class="photo-gallery">
+              <img src="Aimages/property-1.jpg" alt="Property 1" />
+              <img src="Aimages/property-2.jpg" alt="Property 2" />
+              <img src="Aimages/property-3.jpg" alt="Property 3" />
+              <img src="Aimages/property-4.jpg" alt="Property 4" />
+              <img src="Aimages/property-5.jpg" alt="Property 5" />
+              <img src="Aimages/property-6.jpg" alt="Property 6" />
+            </div>
+          </div>
+
+          <!-- Newsletter -->
+          <div class="footer-column">
+            <h4>Newsletter</h4>
+            <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+            <form class="newsletter-form">
+              <input type="email" placeholder="Your email" />
+              <button type="submit">SignUp</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+          <p>
+            Â© Your Site Name, All Right Reserved. Designed By
+            <a href="#">HTML Codex</a>
+          </p>
+          <ul class="footer-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Cookies</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+      </footer>
     </div>
     <script src="JavaScript/script.js"></script>
   </body>
