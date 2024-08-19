@@ -40,6 +40,9 @@
   position: fixed;
   bottom: 45px;
   right: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   z-index: 9999;
   transition: 0.5s;
   border: 2px solid #fff;
