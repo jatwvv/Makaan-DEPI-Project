@@ -358,6 +358,22 @@ body {
 .slider-controls .next:hover {
   background-color: var(--dark-hover);
 }
+.Register {
+  margin-left: 15px;
+  background-color: #fff;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+.Register:hover {
+  background-color: var(--primary);
+  color:#fff;
+  border: 1px solid var(--primary);
+}
+.Register.active {
+  background-color: var(--dark);
+  color:#fff;
+  border: 1px solid var(--dark);
+}
 /* slider */
 
 /* end home */
@@ -386,6 +402,13 @@ body {
   }
   .container .home {
     margin-top: -30px;
+  }
+
+}
+@media (max-width: 980px) {
+  .Register {
+    margin: 0;
+    margin-top: 10px;
   }
 }
 

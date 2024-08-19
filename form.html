@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome link -->
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <!-- style file link -->
+    <link rel="stylesheet" href="CSS/style.css" />
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Makaan | 404</title>
+  </head>
+  <body>
+    <script>
+      window.addEventListener("load", () => {
+        const loader = document.getElementById("loader");
+        const content = document.getElementById("container");
+        setTimeout(() => {
+          loader.style.opacity = "0"; // Start fading out
+          setTimeout(() => {
+            loader.style.display = "none"; // Hide after transition
+            content.style.display = "block";
+          }, 500); // Match this delay with the CSS transition duration
+        }, 500);
+      });
+    </script>
+    <div class="container" id="container">
+      <div id="loader" class="loader-container">
+        <div class="spinner">
+          <div class="bounce1"></div>
+          <div class="bounce2"></div>
+          <div class="bounce3"></div>
+        </div>
+      </div>
+      <!-- Start Navigation Bar -->
+      <header>
+        <nav>
+          <a href="#" class="logo">
+            <div class="icon">
+              <img src="Aimages/icon-deal.png" alt="logo" />
+            </div>
+            <h1>Makaan</h1>
+          </a>
+          <div class="collapse">
+            <div class="navbar-nav">
+              <a href="index.html" class="nav-item nav-link">Home</a>
+              <a href="about.html" class="nav-item nav-link">About</a>
+              <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle"
+                  >Property <i class="fa-solid fa-chevron-down"></i
+                ></a>
+                <div class="dropdown-menu">
+                  <a href="problist.html" class="dropdown-item"
+                    >Property List</a
+                  >
+                  <a href="proptype.html" class="dropdown-item"
+                    >Property Type</a
+                  >
+                  <a href="propagent.html" class="dropdown-item"
+                    >Property Agent</a
+                  >
+                </div>
+              </div>
+              <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle "
+                  >Pages<i class="fa-solid fa-chevron-down"></i
+                ></a>
+                <div class="dropdown-menu rounded-0 m-0">
+                  <a href="testimonial.html" class="dropdown-item"
+                    >Testimonial</a
+                  >
+                  <a href="404.html" class=" dropdown-item">404 Error</a>
+                </div>
+              </div>
+              <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+            <a href="#" class="btn">Add Property</a>
+            <a href="form.html" class="btn Register active">Register</a>
+          </div>
+        </nav>
+      </header>
+
+      <!-- end intro -->
+      <style type="text/css">
+        :root {
+  --primary: #00b98e;
+  --primary-hover: #26c49f;
+  --secondary: #ff6922;
+  --light: #effdf5;
+  --dark: #0e2e50;
+  --dark-hover: #0c2744;
+  --primary-hover: #26c49f;
+  --secondary: #ff6922;
+  --light: #effdf5;
+  --dark: #0e2e50;
+  --dark-hover: #0c2744;
+}
+        input {
+          height: 35px;
+          border-radius: 5px;
+          border: 1px solid var(--primary);
+          padding: 7px 12px;
+          caret-color: var(--primary);
+          outline: 0;
+          cursor: pointer;
+        }
+        input:focus {
+          border: 1px solid var(--primary);
+        }
+        p {
+          font-size: 14px;
+          padding-bottom: 8px;
+        }
+        p::after {
+          content: "*";
+          padding-left: 5px;
+          color: var(--primary);
+        }
+        .containerform {
+          width: 550px;
+          background-color: #fff;
+          border-radius: 15px;
+          padding: 30px;
+          -webkit-border-radius: 15px;
+          -moz-border-radius: 15px;
+          -ms-border-radius: 15px;
+          -o-border-radius: 15px;
+          margin: 50px auto 0;
+        }
+        .containerform h1 {
+          font-weight: 700;
+          font-size: 26px;
+          color: var(--dark);
+          margin-bottom: 17px;
+        }
+        .containerform form .name {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 15px;
+        }
+        .containerform form .name .box input {
+          width: 235px;
+        }
+        .containerform form .email {
+          margin-bottom: 15px;
+        }
+        .containerform form .email input {
+          width: 100%;
+        }
+  
+        .containerform form .queryboxes {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 7px;
+        }
+        .containerform form .queryboxes .box {
+          display: flex;
+          align-items: center;
+          width: 235px;
+          border: 1px solid hsl(186, 15%, 59%);
+          border-radius: 5px;
+          padding: 0px 20px;
+          cursor: pointer;
+          accent-color: var(--primary);
+          position: relative;
+          overflow: hidden;
+        }
+        .containerform form .queryboxes .box h2 {
+          font-weight: 400;
+          font-size: 16px;
+          color: hsl(187, 24%, 22%);
+          padding-left: 13px;
+        }
+        .containerform form .queryboxes .box input {
+          border-color: hsl(186, 15%, 59%);
+        }
+  
+        .containerform form .message #textarea {
+          width: 100%;
+          height: 35px;
+          padding: 10px;
+          resize: none;
+          outline: 0;
+          border: 1px solid hsl(186, 15%, 59%);
+          caret-color: hsl(0deg 0% 42.52%);
+          border-radius: 5px;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          -ms-border-radius: 5px;
+          -o-border-radius: 5px;
+        }
+        .containerform form .message #textarea:focus {
+          border: 1px solid var(--primary);
+        }
+        .containerform form .checkbox {
+          display: flex;
+          align-items: center;
+        }
+        .containerform form .checkbox input {
+          width: 15px;
+          border-radius: 0;
+          cursor: pointer;
+          -webkit-border-radius: 0;
+          -moz-border-radius: 0;
+          -ms-border-radius: 0;
+          accent-color: var(--primary);
+          -o-border-radius: 0;
+          margin: 15px 0;
+        }
+        .containerform form .checkbox p {
+          padding: 0;
+          margin-left: 10px;
+        }
+        .containerform form .submit input {
+          width: 100%;
+          background-color: var(--primary);
+          color: #fff;
+          font-weight: 600;
+          height: 45px;
+          cursor: pointer;
+          border: 0;
+          transition: 0.4s;
+          -webkit-transition: 0.4s;
+          -moz-transition: 0.4s;
+          -ms-transition: 0.4s;
+          -o-transition: 0.4s;
+        }
+        #num {
+          width: 100%;
+        }
+        .containerform form .submit input:hover {
+          background-color: var(--primary-hover);
+        }
+        input {
+          border-color: hsl(186, 15%, 59%);
+        }
+        .error {
+          color: #ff3860;
+          font-size: 9px;
+          height: 13px;
+        }
+        input:valid {
+          border-color: #35ff64;
+        }
+        @media (max-width: 560px) {
+          .containerform {
+            width: 100%;
+            height: 100%;
+          }
+          .containerform form .name {
+            display: block;
+          }
+          .containerform form .name .box input {
+            width: 100%;
+          }
+          .containerform form .queryboxes {
+            display: block;
+          }
+          .containerform form .queryboxes .box {
+            width: 100%;
+            margin-bottom: 20px;
+          }
+        }
+        
+      </style>
+      <div class="containerform">
+        <form id="form">
+          <div class="name">
+            <div class="box">
+              <p>First Name</p>
+              <input required id="username" type="text" />
+              <div class="error"></div>
+            </div>
+  
+            <div class="box">
+              <p>Last Name</p>
+              <input required id="usernameTwo" type="text" />
+              <div class="error"></div>
+            </div>
+          </div>
+  
+          <div class="email">
+            <p>Password</p>
+            <input required id="password" type="password" />
+            <div class="error"></div>
+          </div>
+  
+          <div class="email">
+            <p>Email Address</p>
+            <input required id="email" type="email" />
+            <div class="error"></div>
+          </div>
+  
+          <div class="query">
+            <p>Gender</p>
+            <div class="queryboxes">
+              <label id="radioOne" class="box">
+                <input required type="radio" name="query" />
+                <h2>Male</h2>
+              </label>
+  
+              <label id="radioTow" class="box">
+                <input required  type="radio" name="query" />
+                <h2>Female</h2>
+              </label>
+            </div>
+          </div>
+          <div id="error" class="error"></div>
+  
+          <div class="message">
+            <p>Person/s</p>
+            <input required type="number" id="num">
+            <div class="error"></div>
+          </div>
+  
+          <div class="email">
+            <p>Telephone</p>
+            <input required type="tele" max="11" id="tele">
+            <div class="error"></div>
+          </div>
+  
+          <div class="submit">
+            <input required onclick="checkRadio()" type="submit" />
+          </div>
+        </form>
+      </div>
+
+      <!-- start error -->
+      
+      <!-- end error -->
+      <footer id="footer" class="footer">
+        <div class="footer-content">
+          <!-- Get In Touch -->
+          <div class="footer-column">
+            <h4>Get In Touch</h4>
+            <ul class="contact-info">
+              <li>
+                <i class="fas fa-map-marker-alt"></i> 123 Street, New York, USA
+              </li>
+              <li><i class="fas fa-phone-alt"></i> +012 345 67890</li>
+              <li><i class="fas fa-envelope"></i> info@example.com</li>
+            </ul>
+            <ul class="social-linkss">
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </li>
+            </ul>
+          </div>
+          <script type="text/JavaScript" defer>
+            const form = document.getElementById("form");
+            const username = document.getElementById("username");
+            const usernameTwo = document.getElementById("usernameTwo");
+            const password = document.getElementById("password");
+            const email = document.getElementById("email");
+            const tele = document.getElementById("tele");
+            const textarea = document.getElementById("num");
+      
+            //to prevent submit btn from working till it validates
+            form.addEventListener("submit", (e) => {
+              e.preventDefault();
+      
+              validateInputs();
+            });
+            //setting err message
+            const setError = (element, message) => {
+              const inputControl = element.parentElement;
+              const errorDisplay = inputControl.querySelector(".error");
+              errorDisplay.innerText = message;
+              inputControl.classList.add("success");
+              inputControl.classList.remove("error");
+            };
+            const setSuccess = (element) => {
+              const inputControl = element.parentElement;
+              const errorDisplay = inputControl.querySelector(".error");
+      
+              errorDisplay.innerText = "";
+              inputControl.classList.add("success");
+              inputControl.classList.remove("error");
+            };
+      
+            const isValidEmail = (email) => {
+              const re =
+                /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+              return re.test(String(email).toLowerCase());
+            };
+            //remove all white spaces that the input has
+            const validateInputs = () => {
+              const usernameValue = username.value.trim();
+              const usernameTwoValue = usernameTwo.value.trim();
+              const emailValue = email.value.trim();
+              const teleValue = tele.value.trim();
+              const textareaValue = textarea.value.trim();
+              const passwordValue = password.value.trim();
+      
+              if (usernameValue === "") {
+                setError(username, "This Field is Required");
+                username.classList.add("red");
+              } else {
+                setSuccess(username);
+                username.classList.add("green");
+              }
+              if (usernameTwoValue === "") {
+                setError(usernameTwo, "This Field is Required");
+                usernameTwo.classList.add("red");
+              } else {
+                setSuccess(usernameTwo);
+                usernameTwo.classList.add("green");
+              }
+              if (emailValue === "") {
+                setError(email, "This field is required");
+                email.classList.add("red");
+              } else if (!isValidEmail(emailValue)) {
+                setError(email, "Please enter a valid email address");
+                email.classList.add("red");
+              } else {
+                setSuccess(email);
+                email.classList.add("green");
+              }
+              if (textareaValue === "") {
+                setError(textarea, "This Field is Required");
+                textarea.classList.add("red");
+              } else {
+                setSuccess(textarea);
+                textarea.classList.add("green");
+              }
+              if (passwordValue === "") {
+                setError(password, "This Field is Required");
+                password.classList.add("red");
+              } else {
+                setSuccess(password);
+                password.classList.add("green");
+              }
+              if (teleValue === "") {
+                setError(tele, "This Field is Required");
+                tele.classList.add("red");
+              } else {
+                setSuccess(tele);
+                tele.classList.add("green");
+              }
+            };
+            function checkRadio() {
+              var getSelectedValue = document.querySelector('input[name="query"]:checked');
+              var radioone = document.getElementById('radioOne');
+              var radiotwo = document.getElementById('radioTow');
+              if(getSelectedValue != null){
+                document.getElementById('error').innerHTML =" ";
+                radioone.classList.add("green");
+                radiotwo.classList.add("green");
+              }else {
+                document.getElementById('error').innerHTML = 'This Field is Required';
+                radioone.classList.add("red");
+                radiotwo.classList.add("red");
+              }
+            }
+          </script>
+          <!-- Quick Links -->
+          <div class="footer-column">
+            <h4>Quick Links</h4>
+            <ul class="quick-links">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Our Services</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms & Condition</a></li>
+            </ul>
+          </div>
+
+          <!-- Photo Gallery -->
+          <div class="footer-column">
+            <h4>Photo Gallery</h4>
+            <div class="photo-gallery">
+              <img src="Aimages/property-1.jpg" alt="Property 1" />
+              <img src="Aimages/property-2.jpg" alt="Property 2" />
+              <img src="Aimages/property-3.jpg" alt="Property 3" />
+              <img src="Aimages/property-4.jpg" alt="Property 4" />
+              <img src="Aimages/property-5.jpg" alt="Property 5" />
+              <img src="Aimages/property-6.jpg" alt="Property 6" />
+            </div>
+          </div>
+
+          <!-- Newsletter -->
+          <div class="footer-column">
+            <h4>Newsletter</h4>
+            <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+            <form class="newsletter-form">
+              <input type="email" placeholder="Your email" />
+              <button type="submit">SignUp</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+          <p>
+            Â© Your Site Name, All Right Reserved. Designed By
+            <a href="#">HTML Codex</a>
+          </p>
+          <ul class="footer-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Cookies</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <script src="JavaScript/script.js"></script>
+  </body>
+</html>
