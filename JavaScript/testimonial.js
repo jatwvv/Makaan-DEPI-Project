@@ -72,10 +72,7 @@ window.addEventListener('load', () => {
   const loader = document.getElementById('loader');
   const content = document.getElementById('container');
   setTimeout(() => {
-        loader.style.opacity = '0'; // Start fading out
-        setTimeout(() => {
-            loader.style.display = 'none'; // Hide after transition
-            content.style.display = 'block';
-        }, 500); // Match this delay with the CSS transition duration
-    }, 500);
-  });
+    loader.style.display = 'none';
+    content.style.display = 'block';
+}, 500);
+});
