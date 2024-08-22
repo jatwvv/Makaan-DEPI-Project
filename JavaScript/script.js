@@ -22,7 +22,7 @@ const scrollTop = function () {
   const scrollWindow = function () {
     if (window.scrollY != 0) {
       setTimeout(function () {
-        window.scrollTo(0, window.scrollY - 50);
+        window.scrollTo(0, window.scrollY - 10);
         scrollWindow();
       }, 10);
     }

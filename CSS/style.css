@@ -1305,7 +1305,7 @@ p {
 }
 
 .search-button {
-  padding: 1.1rem 50px;
+  padding: 1.2rem 75px;
   background-color: var(--dark);
   color: white;
   border: none;
@@ -1348,7 +1348,6 @@ p {
   z-index: 3;
   position: relative;
   height: auto;
-  border-radius: 10px;
 }
 
 .text {
@@ -1830,18 +1829,4 @@ textarea {
     -webkit-transform: scale(1);
     transform: scale(1);
   }
-}
-@keyframes fadeInUp {
-  0% {
-    transform: translateY(100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0%);
-    opacity: 1;
-  }
-}
-
-.fadeInUp-animation {
-  animation: 1.5s fadeInUp;
 }
